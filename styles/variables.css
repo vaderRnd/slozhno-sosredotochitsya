@@ -2,3 +2,10 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --accent-color: #FF0070;
+  --title-color: #DB00FF;
+  --heading-text-color: #000028;
+  --background-color: #000028;
+  --intro-text: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+}

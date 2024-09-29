@@ -1,5 +1,111 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  width: 375px;
+  font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-image: url(../images/cover-image-dark.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: var(--background-color);
+  overflow: auto;
+}
+
+
+
+/* БЕРЕМ ТУТЬ, ИСПОЛЬЗУЕМ ВЕЗДЕ */
+
+/* розовый фон текста */
+.heading_decor {
+  background-color: var(--accent-color);
+}
+
+
+
+/* ОСНОВНОЕ */
+
+.header {
+  display: grid;
+}
+
+.header__theme-menu {
+  padding: 38.5px 17px 0 0;
+  display: grid;
+  justify-self: end;
+  color: var(--accent-color);
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 10.8px;
+}
+
+.title {
+  padding: 64.9px 10px 0 10px;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0px var(--accent-color);
+  font-family: "IBM Plex Mono";
+  font-size: var(--intro-text);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+  letter-spacing: -2.6px;
+}
+
+.decorated_top {
+  margin: 10px 10px 0 0;
+  display: grid;
+  justify-self: end;
+  width: 25.036px;
+  height: 25.002px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.decorated_bottom {
+  margin: 31px 0 10px 10px;
+  width: 25.036px;
+  height: 25.002px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.header_description {
+  margin: 53.6px 10px 0 10px;
+  color: var(--heading-text-color);
+  font-family: "IBM Plex Mono";
+  font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+
+
+/* ФУТЕР */
+
+.footer {
+  display: grid;
+}
+
+.footer_heading {
+  margin: 209px 0;
+  color: var(--title-color);
+  text-shadow: 2px 2px 0px var(--accent-color);
+  display: flex;
+  width: 375px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  font-size: var(--intro-text)
 }
