@@ -2,7 +2,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   width: 375px;
-  font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif;
+  font-family: var(--main-font);
   font-size: 18px;
   background-image: url(../images/cover-image-dark.png);
   background-size: cover;
@@ -24,7 +24,7 @@
 
 
 
-/* ОСНОВНОЕ */
+/* ХЕДЕР */
 
 .header {
   display: grid;
@@ -52,7 +52,7 @@
   padding: 64.9px 10px 0 10px;
   color: var(--title-color);
   text-shadow: 4px 4px 0px var(--accent-color);
-  font-family: "IBM Plex Mono";
+  font-family: var(--main-font);
   font-size: var(--intro-text);
   font-style: normal;
   font-weight: 700;
@@ -81,12 +81,16 @@
 .header_description {
   margin: 53.6px 10px 0 10px;
   color: var(--heading-text-color);
-  font-family: "IBM Plex Mono";
-  font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+  font-family: var(--main-font);
+  font-size: var(--main-text);
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
 }
+
+
+
+/* ОСНОВНОЕ */
 
 
 
