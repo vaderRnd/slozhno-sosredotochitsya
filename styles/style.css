@@ -19,6 +19,7 @@
 
 /* розовый фон текста */
 .heading_decor {
+  color: var(--heading-text-color);
   background-color: var(--accent-color);
 }
 
@@ -91,6 +92,43 @@
 
 
 /* ОСНОВНОЕ */
+
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px var(--accent-color);
+  border-bottom: 1px solid var(--content-text-color);
+
+}
+
+img {
+  width: 100vw;
+}
+
+.section {
+  margin: 40px 10px 0 10px;
+}
+
+.content__list-item {
+  margin-top: 20px;
+}
+
+.content__list-item_paragraph {
+  margin: 10px 3.97px 0 0;
+  color: var(--content-text-color);
+}
+
+.title_decor {
+  font-family: var(--main-font);
+  font-size: var(--main-text);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  color: var(--accent-color);
+}
+
+.advise {
+  margin-top: 20px;;
+}
 
 
 
