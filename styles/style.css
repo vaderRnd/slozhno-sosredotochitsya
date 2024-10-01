@@ -2,6 +2,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   width: 375px;
+  min-height: 668px;
   font-family: var(--main-font);
   font-size: 18px;
   background-image: url(../images/cover-image-dark.png);
@@ -101,11 +102,19 @@
 }
 
 img {
-  width: 100vw;
+  width: 100%;
 }
 
 .section {
   margin: 40px 10px 0 10px;
+}
+
+.galery {
+  margin: 50px 10px 40px 10px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  gap: 10px;
 }
 
 .content__list-item {
